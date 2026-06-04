@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us | AI-Solutions</title>
+<meta name="description" content="Contact AI-Solutions to discuss your AI software project.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-nav"></div>
+<section class="section" style="padding-top:140px">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>Contact Us</h2><p>Tell us about your project — we usually reply within one business day.</p></div>
+
+    <div class="row g-4">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="glass p-4 h-100">
+          <h4 class="mb-3">Get in touch</h4>
+          <p class="text-secondary"><i class="fa fa-location-dot me-2 text-info"></i>Sunderland, United Kingdom</p>
+          <p class="text-secondary"><i class="fa fa-envelope me-2 text-info"></i>hello@ai-solutions.co.uk</p>
+          <p class="text-secondary"><i class="fa fa-phone me-2 text-info"></i>+44 191 000 0000</p>
+          <hr class="border-secondary">
+          <h6 class="mt-3">FAQ</h6>
+          <div class="accordion accordion-flush" id="faq">
+            
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent text-light" data-bs-toggle="collapse" data-bs-target="#faq0">
+                  How quickly can you start?
+                </button>
+              </h2>
+              <div id="faq0" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body text-secondary">Most engagements start within 2 weeks of discovery.</div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent text-light" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Do you sign NDAs?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body text-secondary">Always — we sign before any technical conversation.</div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent border-0">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent text-light" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Do you work outside the UK?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body text-secondary">Yes, we work with clients globally.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="glass p-4 p-md-5">
+          <form data-ajax action="php/contact_process.php" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6"><label>Full Name *</label><input class="form-control" name="full_name" required></div>
+              <div class="col-md-6"><label>Email Address *</label><input type="email" class="form-control" name="email" required></div>
+              <div class="col-md-6"><label>Phone Number</label><input class="form-control" name="phone"></div>
+              <div class="col-md-6"><label>Company Name</label><input class="form-control" name="company"></div>
+              <div class="col-md-6"><label>Country</label><input class="form-control" name="country"></div>
+              <div class="col-md-6"><label>Job Title</label><input class="form-control" name="job_title"></div>
+              <div class="col-12"><label>Job Details / Requirements *</label><textarea class="form-control" name="job_details" rows="5" required></textarea></div>
+              <div class="col-12 text-end"><button class="btn btn-neon"><i class="fa fa-paper-plane"></i>Send Inquiry</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="site-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+<script>if(typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined')gsap.registerPlugin(ScrollTrigger);</script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

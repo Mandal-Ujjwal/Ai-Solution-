@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customer Feedback | AI-Solutions</title>
+<meta name="description" content="Read customer reviews and share your own feedback with AI-Solutions.">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="site-nav"></div>
+<section class="section" style="padding-top:140px">
+  <div class="container">
+    <div class="section-title" data-aos="fade-up"><h2>Customer Feedback</h2><p>Real words from real teams.</p></div>
+
+    <div class="swiper testimonial-swiper mb-5">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">
+          <div class="review-card glass mx-auto" style="max-width:620px">
+            <div class="text-warning mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <p>"Best development partner we have worked with."</p>
+            <p class="mb-0 fw-bold">Emily Carter</p>
+            <small class="text-secondary">BrightWave</small>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card glass mx-auto" style="max-width:620px">
+            <div class="text-warning mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <p>"AI-Solutions delivered enterprise-grade quality."</p>
+            <p class="mb-0 fw-bold">Marcus Lee</p>
+            <small class="text-secondary">Helix Bank</small>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card glass mx-auto" style="max-width:620px">
+            <div class="text-warning mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <p>"Friendly team, brilliant engineers, great results."</p>
+            <p class="mb-0 fw-bold">Priya Singh</p>
+            <small class="text-secondary">EduNext</small>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card glass mx-auto" style="max-width:620px">
+            <div class="text-warning mb-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+            <p>"Their automation cut our processing time in half."</p>
+            <p class="mb-0 fw-bold">Tom Becker</p>
+            <small class="text-secondary">MetroLogix</small>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-7" data-aos="fade-up">
+        <div class="glass p-4 p-md-5">
+          <h4 class="mb-3"><i class="fa fa-pen-to-square me-2 text-info"></i>Share your feedback</h4>
+          <form data-ajax action="php/feedback_process.php">
+            <div class="row g-3">
+              <div class="col-md-6"><label>Name</label><input class="form-control" name="name" required></div>
+              <div class="col-md-6"><label>Company</label><input class="form-control" name="company"></div>
+              <div class="col-12">
+                <label>Rating</label>
+                <div class="d-flex align-items-center gap-2">
+                  <div class="star-rating">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                  </div>
+                  <input type="hidden" name="rating" value="5">
+                </div>
+              </div>
+              <div class="col-12"><label>Message</label><textarea class="form-control" name="message" rows="4" required></textarea></div>
+              <div class="col-12 text-end"><button class="btn btn-neon"><i class="fa fa-paper-plane"></i>Submit</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  if(typeof Swiper!=='undefined') new Swiper('.testimonial-swiper',{loop:true,autoplay:{delay:4000},pagination:{el:'.swiper-pagination',clickable:true},slidesPerView:1});
+});
+</script>
+<div id="site-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+<script>if(typeof gsap!=='undefined'&&typeof ScrollTrigger!=='undefined')gsap.registerPlugin(ScrollTrigger);</script>
+<script src="js/partials.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
